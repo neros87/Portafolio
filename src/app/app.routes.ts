@@ -7,9 +7,9 @@ import {
 } from './components/index.paginas';
 
 const app_routes:Routes = [
-  {path: 'routePath', component: PortafolioComponent },
-  {path: 'routePath', component: AboutComponent },
-  {path: 'routePath', component: ProductoComponent },
+  {path: '', component: PortafolioComponent },
+  {path: 'about', component: AboutComponent },
+  {path: 'producto', component: ProductoComponent },
   {path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
