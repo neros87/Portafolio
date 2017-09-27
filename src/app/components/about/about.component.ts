@@ -6,5 +6,5 @@ import {InformacionService} from "../../services/informacion.service";
   templateUrl: './about.component.html',
 })
 export class AboutComponent {
-  constructor( public _is:InformacionService){}
+  constructor( public _is:InformacionService) {}
 }
