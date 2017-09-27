@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from "@angular/http";
+// import {setTimeout} from "timers";
 
 @Injectable()
 export class ProductosService {
@@ -17,10 +18,13 @@ export class ProductosService {
 
       this.http.get('https://angularwebpage.firebaseio.com/producto_idx.json')
         .subscribe( res => {
-          console.log( res.json() );
-          this.cargando = false;
-          this.productos = res.json();
-    })
+          // console.log( res.json() );
+
+          // setTimeout(()=> {
+            this.cargando = false;
+            this.productos = res.json();
+          // }, 1500)
+        });
 
     // }
   }
